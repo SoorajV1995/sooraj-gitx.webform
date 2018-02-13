@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web|Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="jumbotron">
+		<h1 class="display-4">Provide Details</h1>
+			<hr class="my-4">
+				<div class="form-group mb-2">
+				<form name="myform" onsubmit="return validateform()" />
+					Name:<input class="form-control" id="namevalid" type="text" name="name" autofocus placeholder="Name" /><p id="nme"></p><br><br>
+					Phone Number:<input class="form-control" id="phone" type="number" name="phoneno" placeholder="Phone Number" /><p id="phn"></p><br><br>
+					Email:<input class="form-control" id="mail" type="email" name="emailid" placeholder="Email"/><p id="eml"></p><br><br>
+					City:<select class="form-control" id="region" name="city" />
+						<option value="">--select one--</option>
+						<option value="delhi">Delhi</option>
+						<option value="mumbai">Mumbai</option>
+						<option value="kolkata">Kolkata</option>
+						<option value="chennai">Chennai</option>
+						<option value="bangalore">Bangalore</option>
+					</select><p id="cty"></p><br><br>
+					<input class="btn btn-primary" type="submit" value="Submit"/>
+					<input class="btn btn-primary" type="reset" value="Clear"/>
+				</form>
+			</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
